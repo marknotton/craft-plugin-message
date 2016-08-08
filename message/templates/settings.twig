@@ -1,0 +1,16 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textareaField({
+  label: "Enter a message"|t,
+  instructions: "Enter a static message which will only be displayed within the CMS"|t,
+  name: 'messages',
+  value: settings.messages
+}) }}
+
+{{ forms.selectField({
+  id: 'output',
+  name: 'output',
+  label: 'Output As',
+  options: options.output,
+  value: settings.output
+}) }}

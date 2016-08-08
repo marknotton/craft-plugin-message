@@ -1,0 +1,13 @@
+<div class="message">
+{% if settings.output == "html" %}
+  {{ settings.messages | raw }}
+{% else %}
+  {{ settings.messages | markdown }}    
+{% endif %}
+</div>
+
+{% set css %}
+  #fields-{{ name }}-field .heading { display:none !important }
+{% endset %}
+
+{% includeCss css %}
