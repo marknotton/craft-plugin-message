@@ -10,6 +10,14 @@ class MessagePlugin extends BasePlugin {
     return '0.1';
   }
 
+  public function getSchemaVersion() {
+    return '0.1';
+  }
+  
+  public function getDescription() {
+    return 'Add HTML or Markup notes directly into the CMS alongside a field.';
+  }
+
   public function getDeveloper() {
     return 'Yello Studio';
   }
